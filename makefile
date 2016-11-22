@@ -5,11 +5,11 @@ BACKUP=./backup/
 install: $(TARGET).vimrc $(TARGET).vim
 
 $(TARGET).vimrc:
-	cp .vimrc $(TARGET).vimrc
+	cp vimrc $(TARGET).vimrc
 
 $(TARGET).vim:
 	mkdir $(TARGET).vim
-	cp -r .vim/* $(TARGET).vim/
+	cp -r vim/* $(TARGET).vim/
 
 
 #CLEAN
